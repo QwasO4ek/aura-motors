@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AURA MOTORS — премиальный автомобильный дом. Эксклюзивная коллекция суперкаров, спорткаров и роскошных электромобилей в наличии с гарантией 5 лет.">
+  <title>AURA MOTORS — Премиальный автосалон</title>
+  
+  <!-- Google Fonts: Syne & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <div class="logo-symbol"></div>
+        <span class="logo-text">Aura Motors</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#catalog" class="nav-link">Коллекция</a></li>
+          <li><a href="#calculator" class="nav-link">Кредит & Trade-in</a></li>
+          <li><a href="#privileges" class="nav-link">Привилегии</a></li>
+          <li><a href="#testdrive" class="nav-link">Тест-драйв</a></li>
+          <li><a href="#showroom" class="nav-link">Шоурумы</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+74959008800" class="header-phone">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          +7 (495) 900-88-00
+        </a>
+
+        <button class="header-favorites-btn" id="openFavoritesBtn" aria-label="Избранные автомобили" title="Избранное">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="fav-badge" id="favoritesCountBadge">0</span>
+        </button>
+
+        <button class="btn-consult-header" id="headerConsultBtn">Консьерж</button>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Меню">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-backdrop"></div>
+    <div class="container hero-content">
+      <div class="hero-subtitle">
+        <div class="hero-subtitle-line"></div>
+        <span class="hero-subtitle-text">Quiet Luxury & Contemporary Performance</span>
+      </div>
+
+      <h1 class="hero-title">
+        Искусство мощности.<br>
+        <span>Безупречная эстетика.</span>
+      </h1>
+
+      <p class="hero-description">
+        Премиальный автомобильный дом AURA MOTORS представляет коллекцию выдающихся суперкаров, электромобилей и представительских седанов с прозрачной историей и закрытой доставкой по РФ.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#catalog" class="btn btn-primary">
+          Исследовать коллекцию
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+        <a href="#testdrive" class="btn btn-secondary">
+          Записаться на тест-драйв
+        </a>
+      </div>
+
+      <div class="hero-metrics">
+        <div class="metric-item">
+          <div class="metric-value">42+</div>
+          <div class="metric-label">Автомобилей в наличии</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">4.9%</div>
+          <div class="metric-label">Специальная кредитная ставка</div>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">5 лет</div>
+          <div class="metric-label">Официальная сервисная гарантия</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catalog & Inventory Section -->
+  <section class="catalog-section" id="catalog">
+    <div class="container">
+      <div class="catalog-header">
+        <div>
+          <span class="section-tag">Каталог коллекции</span>
+          <h2 class="section-title">Автомобили в наличии</h2>
+          <p class="section-desc">Каждый автомобиль прошёл комплексную диагностику по 140 пунктам заводских стандартов и доступен к немедленной передаче.</p>
+        </div>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-bar-sticky">
+        <div class="category-pills" id="categoryPills">
+          <button class="category-pill active" data-category="all">Все модели</button>
+          <button class="category-pill" data-category="sports">Спорткары</button>
+          <button class="category-pill" data-category="electric">Электро & Гибриды</button>
+          <button class="category-pill" data-category="suv">Внедорожники</button>
+          <button class="category-pill" data-category="sedan">Седаны</button>
+        </div>
+
+        <div class="filter-controls">
+          <div class="search-box">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="searchInput" class="search-input" placeholder="Поиск (Porsche, AMG, GT3...)">
+          </div>
+
+          <select id="sortSelect" class="sort-select" aria-label="Сортировка автомобилей">
+            <option value="default">Сортировка: По умолчанию</option>
+            <option value="price-asc">Цена: по возрастанию</option>
+            <option value="price-desc">Цена: по убыванию</option>
+            <option value="power-desc">Мощность: по убыванию</option>
+            <option value="accel-asc">Разгон 0-100: быстрые</option>
+          </select>
+
+          <label class="stock-toggle-label">
+            <input type="checkbox" id="inStockOnly">
+            <span class="custom-checkbox"></span>
+            Только в наличии
+          </label>
+        </div>
+      </div>
+
+      <!-- Cars Grid -->
+      <div class="cars-grid" id="carsGrid">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Financial & Trade-In Calculator -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+        <span class="section-tag">Aura Finance & Trade-In</span>
+        <h2 class="section-title">Интерактивный финансовый калькулятор</h2>
+        <p class="section-desc" style="margin: 0 auto;">
+          Рассчитайте персональные условия кредитования или лизинга. При сдаче вашего автомобиля в Trade-in действует специальная дополнительная выгода.
+        </p>
+      </div>
+
+      <div class="calculator-wrapper">
+        <div class="calc-controls-card">
+          <!-- Car Price -->
+          <div class="calc-group">
+            <div class="calc-group-header">
+              <span class="calc-group-label">Стоимость автомобиля</span>
+              <span class="calc-group-val" id="calcPriceDisplay">25 000 000 ₽</span>
+            </div>
+            <input type="range" id="calcPriceRange" min="10000000" max="50000000" step="500000" value="25000000">
+            <div class="calc-range-ticks">
+              <span>10 млн ₽</span>
+              <span>30 млн ₽</span>
+              <span>50 млн ₽</span>
+            </div>
+          </div>
+
+          <!-- Down Payment -->
+          <div class="calc-group">
+            <div class="calc-group-header">
+              <span class="calc-group-label">Первоначальный взнос (<span id="calcDownPercent">30</span>%)</span>
+              <span class="calc-group-val" id="calcDownAmountDisplay">7 500 000 ₽</span>
+            </div>
+            <input type="range" id="calcDownRange" min="10" max="80" step="5" value="30">
+            <div class="calc-range-ticks">
+              <span>10%</span>
+              <span>45%</span>
+              <span>80%</span>
+            </div>
+          </div>
+
+          <!-- Duration -->
+          <div class="calc-group">
+            <div class="calc-group-header">
+              <span class="calc-group-label">Срок кредитования</span>
+              <span class="calc-group-val" id="calcDurationDisplay">48 мес. (4 года)</span>
+            </div>
+            <input type="range" id="calcDurationRange" min="12" max="84" step="12" value="48">
+            <div class="calc-range-ticks">
+              <span>12 мес.</span>
+              <span>48 мес.</span>
+              <span>84 мес.</span>
+            </div>
+          </div>
+
+          <!-- Trade-In Benefit Toggle -->
+          <label class="calc-tradein-toggle">
+            <div class="calc-tradein-info">
+              <span class="calc-tradein-title">Сдать свой автомобиль в Trade-In</span>
+              <span class="calc-tradein-sub">Выгода до 500 000 ₽ к оценке и сниженная ставка</span>
+            </div>
+            <div class="switch">
+              <input type="checkbox" id="calcTradeInCheck" checked>
+              <span class="slider-round"></span>
+            </div>
+          </label>
+        </div>
+
+        <!-- Calculated Summary Card -->
+        <div class="calc-result-card">
+          <div class="calc-result-header">Ориентировочный расчет</div>
+          <div class="calc-monthly-big" id="calcMonthlyResult">285 000 ₽ <span style="font-size: 16px; font-weight: 400; color: var(--text-muted);">/ мес</span></div>
+
+          <div class="calc-breakdown">
+            <div class="calc-breakdown-row">
+              <span>Сумма кредитования:</span>
+              <span id="calcLoanSumDisplay">17 000 000 ₽</span>
+            </div>
+            <div class="calc-breakdown-row">
+              <span>Ставка программы AURA:</span>
+              <span id="calcRateDisplay">от 5.5% годовых</span>
+            </div>
+            <div class="calc-breakdown-row">
+              <span>Бонус по Trade-in:</span>
+              <span style="color: var(--accent-gold);" id="calcTradeBonusDisplay">-500 000 ₽</span>
+            </div>
+            <div class="calc-breakdown-row">
+              <span>Решение банка:</span>
+              <span>за 15 минут</span>
+            </div>
+          </div>
+
+          <button class="btn btn-primary" id="calcApplyBtn">Получить персональное одобрение</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privileges & Services -->
+  <section class="privilege-section" id="privileges">
+    <div class="container">
+      <div style="text-align: center; max-width: 650px; margin: 0 auto;">
+        <span class="section-tag">AURA PRIVILEGE</span>
+        <h2 class="section-title">Стандарты обслуживания высшего класса</h2>
+        <p class="section-desc" style="margin: 0 auto;">
+          Покупка премиального автомобиля — это безупречный сервис на каждом этапе, от первого звонка до регулярного клубного обслуживания.
+        </p>
+      </div>
+
+      <div class="privilege-grid">
+        <div class="privilege-card">
+          <div class="privilege-num">/ 01</div>
+          <svg class="privilege-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="1" y="3" width="15" height="13"></rect>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+          </svg>
+          <h3 class="privilege-title">Закрытая доставка</h3>
+          <p class="privilege-desc">Бесплатная транспортировка в любую точку РФ на индивидуальном крытом автовозе с климат-контролем и полным страхованием.</p>
+        </div>
+
+        <div class="privilege-card">
+          <div class="privilege-num">/ 02</div>
+          <svg class="privilege-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <h3 class="privilege-title">5 лет сервисной гарантии</h3>
+          <p class="privilege-desc">Полная официальная гарантийная поддержка всех узлов и агрегатов с предоставлением премиального подменного авто на время ТО.</p>
+        </div>
+
+        <div class="privilege-card">
+          <div class="privilege-num">/ 03</div>
+          <svg class="privilege-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+            <polyline points="17 6 23 6 23 12"></polyline>
+          </svg>
+          <h3 class="privilege-title">Премиальный Trade-In</h3>
+          <p class="privilege-desc">Оценка вашего автомобиля выше средней рыночной стоимости за 30 минут с мгновенным зачетом в стоимость нового контракта.</p>
+        </div>
+
+        <div class="privilege-card">
+          <div class="privilege-num">/ 04</div>
+          <svg class="privilege-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="m4.93 4.93 4.24 4.24"></path>
+            <path d="m14.83 9.17 4.24-4.24"></path>
+            <path d="m14.83 14.83 4.24 4.24"></path>
+            <path d="m9.17 14.83-4.24 4.24"></path>
+            <circle cx="12" cy="12" r="4"></circle>
+          </svg>
+          <h3 class="privilege-title">Защита & Детейлинг</h3>
+          <p class="privilege-desc">Каждый выдаваемый автомобиль проходит процедуру нанесения бронепленки SunTek и керамического покрытия кузова в нашем ателье.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP Test-Drive Booking -->
+  <section class="booking-section" id="testdrive">
+    <div class="container">
+      <div class="booking-card">
+        <div class="booking-info-col">
+          <div>
+            <span class="section-tag">Индивидуальный опыт</span>
+            <h2 class="section-title">Приватный тест-драйв</h2>
+            <p class="section-desc" style="font-size: 14.5px;">
+              Почувствуйте характер, звук и динамику выбранной модели на выделенном скоростном загородном маршруте в сопровождении сертифицированного пилота-инструктора.
+            </p>
+          </div>
+
+          <div style="border-top: 1px solid var(--border-subtle); padding-top: 24px;">
+            <div style="font-size: 12px; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent-gold); margin-bottom: 6px;">Время тест-драйва</div>
+            <div style="font-size: 15px; color: #fff;">Ежедневно с 09:00 до 22:00, по предварительной брони</div>
+          </div>
+        </div>
+
+        <div class="booking-form-col">
+          <form class="booking-form" id="testDriveForm">
+            <div class="form-group form-full">
+              <label class="form-label" for="tdCarSelect">Выберите автомобиль</label>
+              <select id="tdCarSelect" class="form-select" required>
+                <!-- Populated by JS -->
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tdDate">Желаемая дата</label>
+              <input type="date" id="tdDate" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tdLocation">Шоурум старта</label>
+              <select id="tdLocation" class="form-select">
+                <option value="city">AURA Москва-Сити (Пресненская)</option>
+                <option value="rublevka">AURA Рублёво-Успенское</option>
+                <option value="spb">AURA Санкт-Петербург (Крестовский о-в)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tdName">Ваше имя</label>
+              <input type="text" id="tdName" class="form-input" placeholder="Александр" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="tdPhone">Номер телефона</label>
+              <input type="tel" id="tdPhone" class="form-input" placeholder="+7 (999) 000-00-00" required>
+            </div>
+
+            <div class="form-group form-full">
+              <label class="form-label" for="tdNotes">Особые пожелания (опционально)</label>
+              <input type="text" id="tdNotes" class="form-input" placeholder="Интересует трековый пакет или Trade-in">
+            </div>
+
+            <div class="form-group form-full">
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                Подтвердить запись на тест-драйв
+              </button>
+            </div>
+
+            <div class="form-full">
+              <p class="form-consent">
+                Нажимая кнопку, вы подтверждаете согласие на обработку персональных данных в соответствии с политикой конфиденциальности. Персональный менеджер свяжется с вами в течение 10 минут.
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showrooms -->
+  <section class="showroom-section" id="showroom">
+    <div class="container">
+      <span class="section-tag">География присутствия</span>
+      <h2 class="section-title">Флагманские шоурумы</h2>
+      <p class="section-desc">Клубные пространства с приватными переговорными, изысканным кофе и закрытым VIP-паркингом для гостей.</p>
+
+      <div class="showroom-grid">
+        <div class="showroom-card">
+          <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?auto=format&fit=crop&w=900&q=80" alt="Шоурум Москва-Сити" class="showroom-img">
+          <div class="showroom-content">
+            <h3 class="showroom-name">AURA Москва-Сити</h3>
+            <div class="showroom-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Москва, Пресненская набережная, 12 (Башня Федерация Восток, 1 этаж)</span>
+            </div>
+            <div class="showroom-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Ежедневно: 09:00 — 22:00 (VIP-клиенты — круглосуточно)</span>
+            </div>
+            <div class="showroom-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+7 (495) 900-88-01</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="showroom-card">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Шоурум Рублево" class="showroom-img">
+          <div class="showroom-content">
+            <h3 class="showroom-name">AURA Рублёвское Ателье</h3>
+            <div class="showroom-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Московская обл., д. Барвиха, Рублёво-Успенское шоссе, 114</span>
+            </div>
+            <div class="showroom-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              <span>Ежедневно: 10:00 — 21:00</span>
+            </div>
+            <div class="showroom-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              <span>+7 (495) 900-88-02</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-symbol"></div>
+            <span class="logo-text">Aura Motors</span>
+          </a>
+          <p>
+            Официальный дистрибьютор и автомобильный консьерж редких, коллекционных и суперсовременных спорткаров.
+          </p>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Навигация</div>
+          <ul class="footer-links">
+            <li><a href="#catalog">Все автомобили</a></li>
+            <li><a href="#calculator">Кредитные программы</a></li>
+            <li><a href="#privileges">Программа Trade-In</a></li>
+            <li><a href="#testdrive">Запись на тест-драйв</a></li>
+            <li><a href="#showroom">Контакты и адреса</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Услуги</div>
+          <ul class="footer-links">
+            <li><a href="#">Индивидуальный заказ авто</a></li>
+            <li><a href="#">Детейлинг и тюнинг</a></li>
+            <li><a href="#">Страхование КАСКО VIP</a></li>
+            <li><a href="#">Сезонное хранение спорткаров</a></li>
+            <li><a href="#">Корпоративный лизинг</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Приватный дайджест</div>
+          <p style="font-size: 13px; color: var(--text-muted); line-height: 1.6;">
+            Получайте закрытые уведомления о поступлении лимитированных серий до официального релиза.
+          </p>
+          <form class="footer-newsletter-form" id="newsletterForm">
+            <input type="email" class="footer-newsletter-input" placeholder="Ваш e-mail" required>
+            <button type="submit" class="btn btn-primary" style="padding: 12px 18px;">→</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 AURA MOTORS AUTOMOTIVE ATELIER. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</div>
+        <div>ИНН 7701984210 • ОГРН 1187746194200</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal: Car Detail Quick View -->
+  <div class="modal-overlay" id="carModal" role="dialog" aria-modal="true">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="closeCarModalBtn" aria-label="Закрыть окно">✕</button>
+      <div class="modal-car-content" id="modalCarContent">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Favorites Drawer -->
+  <div class="drawer-overlay" id="favoritesDrawer">
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div class="drawer-title">Избранные автомобили</div>
+        <button class="modal-close-btn" id="closeFavoritesBtn" style="position: static;" aria-label="Закрыть">✕</button>
+      </div>
+
+      <div class="drawer-items" id="drawerItemsList">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="drawer-footer">
+        <div class="drawer-total">
+          <span>Всего моделей:</span>
+          <span id="drawerTotalCount">0</span>
+        </div>
+        <div class="drawer-total">
+          <span>Суммарная стоимость:</span>
+          <span id="drawerTotalPrice">0 ₽</span>
+        </div>
+        <button class="btn btn-primary" id="drawerInquiryBtn" style="width: 100%;">Запросить КП на выбранные</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Concierge Callback Request -->
+  <div class="modal-overlay" id="quickCallModal">
+    <div class="modal-window" style="max-width: 520px;">
+      <button class="modal-close-btn" id="closeQuickCallBtn">✕</button>
+      <div style="padding: 40px;">
+        <span class="section-tag">Aura Concierge</span>
+        <h2 class="section-title" style="font-size: 24px;">Персональный консьерж</h2>
+        <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 24px;">
+          Оставьте номер телефона, и старший менеджер свяжется с вами для конфиденциальной консультации.
+        </p>
+
+        <form id="quickCallForm" style="display: flex; flex-direction: column; gap: 16px;">
+          <input type="text" class="form-input" placeholder="Ваше имя" required>
+          <input type="tel" class="form-input" placeholder="+7 (___) ___-__-__" required>
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 8px;">Заказать звонок</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Scripts -->
+  <script src="js/cars-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

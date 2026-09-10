@@ -1,0 +1,22 @@
+{
+  "name": "aura-motors",
+  "version": "1.0.0",
+  "description": "Minimalist luxury car dealership website - AURA MOTORS",
+  "main": "serve.js",
+  "scripts": {
+    "start": "node serve.js",
+    "test": "node -c ./js/app.js && node -c ./js/cars-data.js"
+  },
+  "keywords": [
+    "car-dealership",
+    "luxury",
+    "minimalist",
+    "auto",
+    "render"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
