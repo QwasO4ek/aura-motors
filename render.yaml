@@ -1,14 +1,9 @@
 services:
-  # Render Blueprint for AURA MOTORS
-  # Static Site configuration (Fast global CDN, 100% free, no cold starts)
-  - type: static
+  - type: web
     name: aura-motors
+    runtime: static
     buildCommand: ""
     staticPublishPath: .
-    headers:
-      - path: /*
-        name: X-Frame-Options
-        value: SAMEORIGIN
     routes:
       - type: rewrite
         source: /*
